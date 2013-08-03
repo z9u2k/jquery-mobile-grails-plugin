@@ -31,8 +31,12 @@ grails.project.dependency.resolution = {
     plugins {
         compile ":jquery:latest.integration"
         compile ":resources:latest.integration"
-        build ":release:latest.integration", {
-            export = false
-        }
+        // build ":release:latest.integration", {
+            // export = false
+        // }
+   build ':release:2.2.1', ':rest-client-builder:1.0.3', {
+      export = false
+   }
+
     }
 }
