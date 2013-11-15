@@ -31,6 +31,7 @@ grails.project.dependency.resolution = {
     plugins {
         compile ":jquery:latest.integration"
         compile ":resources:latest.integration"
+		runtime ":hibernate:3.6.10.3"
         // build ":release:latest.integration", {
             // export = false
         // }
