@@ -5,3 +5,6 @@ web-app/WEB-INF/classes
 .project
 .settings
 target-eclipse
+grails-jquery-mobile-1.3.2.zip
+grails-jquery-mobile-1.3.2.zip.sha1
+plugin.xml
