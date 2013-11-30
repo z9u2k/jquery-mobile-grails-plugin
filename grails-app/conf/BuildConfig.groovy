@@ -9,20 +9,20 @@ grails.project.dependency.resolution = {
         // excludes 'ehcache'
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
-    repositories {
-        grailsPlugins()
-        grailsHome()
-        grailsCentral()
+        repositories {
+            grailsPlugins()
+                grailsHome()
+                grailsCentral()
 
-        // uncomment the below to enable remote dependency resolution
-        // from public Maven repositories
-        //mavenLocal()
-        mavenCentral()
-        //mavenRepo "http://snapshots.repository.codehaus.org"
-        //mavenRepo "http://repository.codehaus.org"
-        //mavenRepo "http://download.java.net/maven/2/"
-        //mavenRepo "http://repository.jboss.com/maven2/"
-    }
+                // uncomment the below to enable remote dependency resolution
+                // from public Maven repositories
+                //mavenLocal()
+                mavenCentral()
+                //mavenRepo "http://snapshots.repository.codehaus.org"
+                //mavenRepo "http://repository.codehaus.org"
+                //mavenRepo "http://download.java.net/maven/2/"
+                //mavenRepo "http://repository.jboss.com/maven2/"
+        }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -30,14 +30,14 @@ grails.project.dependency.resolution = {
     }
     plugins {
         compile ":jquery:latest.integration"
-        compile ":resources:latest.integration"
-		runtime ":hibernate:3.6.10.3"
-        // build ":release:latest.integration", {
+            compile ":resources:latest.integration"
+            runtime ":hibernate:3.6.10.3"
+            // build ":release:latest.integration", {
             // export = false
-        // }
-   build ':release:2.2.1', ':rest-client-builder:1.0.3', {
-      export = false
-   }
+            // }
+            build ':release:2.2.1', ':rest-client-builder:1.0.3', {
+                export = false
+            }
 
     }
 }
